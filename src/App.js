@@ -1,11 +1,12 @@
 import React from "react";
-import "./App.css";
-import AdminPanel from "./AdminPanel";
+import Header from "./components/Header";
+import Dashboard from "./components/Dashboard";
 
 function App() {
   return (
-    <div className="App">
-      <AdminPanel isAdmin={true} />
+    <div style={{ padding: "20px", fontFamily: "sans-serif" }}>
+      <Header title="User Management System" />
+      <Dashboard />
     </div>
   );
 }
